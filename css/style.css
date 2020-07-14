@@ -28,7 +28,6 @@ body,html{
 .box-one svg{
     width: 100%;
     margin-left: 5px;
-    border: 1px solid red;
 }
 .box-two{
     width: 100vw;
@@ -103,15 +102,26 @@ button{
     .content{
        position: relative;
         z-index: 5;
-        margin-top: 50px;
-        width:30vw;
+        margin-top: 15px;
+        margin-left: -40px;
+        width:40vw;
         left:0;
-        border: 1px solid red;
+    }
+    .logo{
+        width: 110px;
+    }
+    .content h3{
+        margin-top: 100px;
     }
     input, button{
         margin-top: 20px;
         padding: 20px;
     }
-
+    input{
+        width: 350px;
+    }
+    button{
+        width: 150px;
+    }
 
 }
