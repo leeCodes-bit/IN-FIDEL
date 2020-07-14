@@ -24,16 +24,23 @@ body,html{
 .box-one{
     background: linear-gradient(0deg, #FFFFBA 50%, #0070AD 100%, #002863 20%);
 }
+.box-one svg{
+    /* width: 100px; */
+    margin-left: 5px;
+}
  .box-two svg{
-     margin-top: -145px;
+     margin-top: -138px;
      margin-left: -10px;
      margin-right: -10px;
-     width: 415px;
+     width: 387px;
  }
  .content{
     margin-top: -270px;
     margin-left: 30px;
  }
+ .content .logo{
+    margin-top: 20px;
+}
  h1, h3{
      font-weight: bold;
  }
