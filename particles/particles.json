@@ -1,0 +1,29 @@
+{
+  "particles" : {
+    "number": {
+      "value": 80
+    },
+    "size":{
+      "value": 2
+    },
+    "line_linked": {
+      "enable": true,
+      "color": "#4CB44C",
+      "opacity": 0.1
+    },
+    "shape":{
+      "type": ["star", "triangle", "circle", "edge"]
+    },
+    "move": {
+      "bounce": true
+    }
+  },
+  "interactivity" :{
+    "events": {
+      "onhover":{
+        "enable": "true",
+        "mode": "repulse"
+      } 
+    }
+  }
+}
