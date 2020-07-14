@@ -2,7 +2,6 @@
 body,html{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     color: #2B2750;
 }
@@ -25,8 +24,9 @@ body,html{
     background: linear-gradient(0deg, #FFFFBA 50%, #0070AD 100%, #002863 20%);
 }
 .box-one svg{
-    /* width: 100px; */
+    width: 100px;
     margin-left: 5px;
+    border: 1px solid red;
 }
  .box-two svg{
      margin-top: -138px;
@@ -75,14 +75,13 @@ button{
 
 @media only screen and (min-width: 1024px){
     .container{
-        width: 100%;
+        /* width: 100%; */
         height: 650px;
         display: flex;
-        /* justify-content: space-around; */
         flex-direction: row-reverse;
     }
     .box-one{
-        width: 50%;
+        width: 100%;
         background: linear-gradient(0deg, #FFFFBA 20%, #0070AD 60%, #002863 100%);
     }
     .box-one svg{
@@ -90,17 +89,19 @@ button{
     }
     .box-two svg{
         width: 700px;
-        transform: rotate(90deg);
+        transform: rotate(-270deg);
         margin-top: -9px;
+        position: absolute;
+        z-index: 0;
+        left:210px
     }
     .content{
-        position: relative;
+       position: relative;
         z-index: 5;
-        margin-top: -500px;
-        margin-left: 330px;
-    }
-    .content .logo{
-        margin-top: -250px;
+        margin-top: 50px;
+        width:30vw;
+        left:0;
+        border: 1px solid red;
     }
     input, button{
         margin-top: 20px;
