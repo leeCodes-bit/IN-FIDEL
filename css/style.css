@@ -7,18 +7,19 @@ body,html{
 }
 
 /*Particles*/
-#particles-js{
+/* #particles-js{
     position: absolute;
     width: 98vw;
 }
 .particles-js-canvas-el{
     width: 98vw!important;
-}
+} */
 
 /*End of Particles*/
-.container{
+.wrapper{
     width: 100%;
     height: 412px;
+    background: #FBFBFB;
 }
 .box-one{
     background: linear-gradient(0deg, #FFFFBA 50%, #0070AD 100%, #002863 20%);
@@ -76,11 +77,77 @@ button{
     font-size: .9rem;
     font-weight: bold;
 }
+.container-fluid{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border: none;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+    border-radius: 15px;
+    margin: auto;
 
+}
+.card i{
+    font-size: 7rem;
+    margin-top: 50px;
+    text-align: center;
+    /* color: white; */
+}
+.col-md-4 p{
+    margin-top: 20px;
+    text-align: center;
+}
+.section-three{
+    background: #17133C;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+.title h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+}
+.form-data{
+    margin-top: -15px;
+}
+.form-data input{
+    border-radius: 13px 0px 0px 13px;
+}
+.title button{
+    color: #2B2750;
+    border-radius: 0px 13px 13px 0px;
+}
+.section-four{
+    margin-top: -30px;
+}
+.section-four .card{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+    border-radius: 15px;
+}
+.section-four p, .section-four h1{
+    color: #2B2750;
+}
+.section-four h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.section-four p{
+    font-size: 18;
+}
 @media only screen and (min-width: 1024px){
-    .container{
+    .wrapper{
         /* width: 100%; */
-        height: 650px;
+        height: 660px;
         display: flex;
         flex-direction: row-reverse;
     }
@@ -90,6 +157,8 @@ button{
     }
     .box-one svg{
         width: 725px;
+        height: 685px;
+        margin-top: -10px;
     }
     .box-two svg{
         width: 700px;
@@ -97,7 +166,7 @@ button{
         margin-top: -9px;
         position: absolute;
         z-index: 0;
-        left:210px
+        left:215px
     }
     .content{
        position: relative;
@@ -123,5 +192,39 @@ button{
     button{
         width: 150px;
     }
-
+    .container-fluid{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .card{
+        width: 200px;
+    }
+   .card i{
+        font-size: 7rem;
+        margin-top: 50px;
+    }
+    .col-md-4 p{
+        margin-top: 20px;
+    }
+    .section-three{
+        height: 300px;
+    }
+    .title h2{
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    .form-data{
+        margin-top: 90px;
+    }
+    .section-four .card{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .section-four h1{
+        font-size: 28px;
+    }
+    .section-four p{
+        font-size: 18;
+    }
 }
