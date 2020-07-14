@@ -28,7 +28,7 @@ body,html{
      margin-top: -145px;
      margin-left: -10px;
      margin-right: -10px;
-     width: 405px;
+     width: 415px;
  }
  .content{
     margin-top: -270px;
@@ -91,6 +91,9 @@ button{
         z-index: 5;
         margin-top: -500px;
         margin-left: 330px;
+    }
+    .content .logo{
+        margin-top: -250px;
     }
     input, button{
         margin-top: 20px;
