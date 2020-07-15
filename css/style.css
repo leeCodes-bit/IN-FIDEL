@@ -147,7 +147,12 @@ button{
 .section-four p{
     font-size: .9rem;
 }
-
+@media only screen and (min-width: 375px){
+.box-two svg{
+    width: 390px;
+    margin-top: -135px;
+    }
+}
 @media only screen and (min-width: 411px){
     .box-one{
         background: linear-gradient(0deg, #FFFFBA 20%, #0070AD 60%, #002863 100%);
@@ -238,10 +243,10 @@ button{
         margin-top: 50px;
     }
     .title{
-        margin-top: 45px;
+        margin-top: 65px;
     }
     .form-data{
-        margin-top: 40px;
+        margin-top: 85px;
     }
     .form-data input{
         width: 250px;
@@ -256,14 +261,9 @@ button{
 
 @media only screen and (min-width: 1024px){
     .wrapper{
-        /* width: 100%; */
         height: 660px;
         display: flex;
         flex-direction: row-reverse;
-    }
-    .box-one{
-        width: 100%;
-        background: linear-gradient(0deg, #FFFFBA 20%, #0070AD 60%, #002863 100%);
     }
     .box-one svg{
         width: 768px;
@@ -281,8 +281,7 @@ button{
     .content{
        position: relative;
         z-index: 5;
-        margin-top: 15px;
-        /* margin-left: 90px; */
+        margin-top: 5px;
         width:37vw;
         left:0;
     }
@@ -290,17 +289,17 @@ button{
         width: 110px;
     }
     .content h3{
-        margin-top: 100px;
+        margin-top: 80px;
     }
     input, button{
         margin-top: 20px;
         padding: 20px;
     }
     input{
-        width: 350px;
+        width: 550px;
     }
     button{
-        width: 150px;
+        width: 180px;
     }
     .container-fluid{
         margin-top: 80px;
@@ -337,5 +336,30 @@ button{
     }
     .section-four p{
         font-size: 18;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .box-two svg{
+        margin-top: -115px;
+        margin-left: -5px;
+        margin-right: -10px;
+        width: 335px;
+    }
+    .content{
+        margin-top: -230px;
+        margin-left: 30px;
+     }
+    .content input{
+        padding: 15px;
+    }
+    .content button{
+        padding: 15px;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .section-four .card{
+        width: 250px;
+        height: 250px;
     }
 }
