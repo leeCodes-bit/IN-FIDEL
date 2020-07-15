@@ -23,7 +23,7 @@ body,html{
 }
 .box-one{
     background: linear-gradient(0deg, #FFFFBA 50%, #0070AD 100%, #002863 20%);
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .box-one svg{
@@ -31,7 +31,7 @@ body,html{
     margin-left: 5px;
 }
 .box-two{
-    width: 100vw;
+    /* width: 100vw; */
 }
  .box-two svg{
      margin-top: -142px;
@@ -149,6 +149,70 @@ button{
 .section-four p{
     font-size: 18;
 }
+
+@media only screen and (min-width: 768px){
+    .box-one{
+        background: linear-gradient(0deg, #FFFFBA 20%, #0070AD 60%, #002863 100%);;
+    }
+    .box-two svg{
+        margin-top: -270px;
+        margin-left: -10px;
+        width: 795px;
+    }
+    .content{
+        margin-top: -550px;
+        margin-left: 50px;
+     }
+     .content .logo{
+         width: 130px;
+     }
+     h3{
+         font-size: 1.5rem;
+         margin-top: 50px;
+     }
+     h1{
+         font-size: 2.2rem;
+     }
+     .content p{
+         font-size: 1rem;
+     }
+     form{
+         margin-top: 30px;
+     }
+     input{
+        padding: 20px;
+        width: 300px;
+        font-size: 1rem;
+     }
+     button{
+         padding: 20px;
+         font-size: 1rem;
+     }
+
+     /* section two */
+    .section-two{
+        margin-top: 620px;
+    }
+    .section-three{
+        margin-top: 50px;
+    }
+    .title{
+        margin-top: 45px;
+    }
+    .form-data{
+        margin-top: 40px;
+    }
+    .form-data input{
+        width: 250px;
+    }
+    .section-four{
+    }
+    .section-four .card{
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @media only screen and (min-width: 1024px){
     .wrapper{
         /* width: 100%; */
