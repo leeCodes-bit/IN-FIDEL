@@ -8,8 +8,8 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Animate -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:display=swap" rel="stylesheet">
     <!-- custom style -->
@@ -18,7 +18,7 @@
     <title>Boo's Boo</title>
 </head>
 <body>
-    <div class="wrapper" id="particles-js">
+    <div class="wrapper" id="particles-js" data-aos="fade-down">
         <div class="box-one">
             <svg width="" height="" viewBox="0 0 1149 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Landing Page2" clip-path="url(#clip0)">
@@ -203,8 +203,8 @@
                 </svg>
                 
             <!-- <img src="img/Vector (2).png" alt=""> -->
-            <div class="content">
-            <img src="img/IN - FIDEL.png" class="logo" alt="logo">
+            <div class="content" data-aos="fade-right">
+            <img src="img/IN - FIDEL.png" class="logo" alt="logo" data-aos="fade-down">
             <h3>Is your </h3>
             <h1>Lover cheating?</h1>
             <p>We are building an app that can<br>help you know if your partner is<br> cheating. Now the question is; do<br>you want to know if your partner is<br>cheating?</p>
@@ -217,7 +217,7 @@
         </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-aos="zoom-in-up">
         <div class="container-fluid padding">
             <div class="row padding">
                 <div class="col-md-4">
@@ -243,10 +243,10 @@
     </div>
 
     <div class="container-fluid section-three">
-        <div class="title">
+        <div class="title" data-aos="fade-up-right">
             <h2>We’ll Let you know <br> when the app is ready</h2>
         </div>
-        <div class="form-data">
+        <div class="form-data" data-aos="fade-up-left">
             <form action="" method="POST">
                 <input type="email" name="email" id="email" placeholder="Your Email">
                 <button>SUBMIT</button>
@@ -255,7 +255,7 @@
     </div>
 
     <!-- section 4 -->
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
     <div class="container-fluid padding section-four">
         <div class="row welcome text-left">
             <div class="col-12 text-left">
@@ -297,5 +297,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
     <script src="particles/particles.js"></script>
     <script src="particles/index.js"></script>
+
+    <script>
+        AOS.init({
+            duration:1600,
+        })
+    </script>
 </body>
 </html>
