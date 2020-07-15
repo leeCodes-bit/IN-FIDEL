@@ -3,3 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+@keyframes moon{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#pa int0_radial{
+    animation: moon .5s linear infinite;
+}
+
