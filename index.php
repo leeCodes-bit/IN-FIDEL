@@ -1,3 +1,4 @@
+<?php include "form.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +14,8 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:display=swap" rel="stylesheet">
     <!-- custom style -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <title>Boo's Boo</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             <svg width="" height="" viewBox="0 0 1149 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Landing Page2" clip-path="url(#clip0)">
                 <g id="OBJECTS">
-                <g id="Stars">
+                <g id="Stars" data-aos="fade-up">
                 <path id="Vector" d="M302.358 229.357C302.919 228.987 303.088 228.209 302.737 227.619C302.385 227.029 301.646 226.85 301.085 227.22C300.524 227.59 300.354 228.368 300.706 228.958C301.058 229.548 301.797 229.726 302.358 229.357Z" fill="white"/>
                 <path id="Vector_2" d="M345.276 129.726C345.837 129.356 346.006 128.578 345.655 127.988C345.303 127.398 344.564 127.22 344.003 127.589C343.442 127.959 343.272 128.737 343.624 129.327C343.975 129.917 344.715 130.096 345.276 129.726Z" fill="white"/>
                 <path id="Vector_3" d="M278.107 35.613C278.668 35.2432 278.837 34.4651 278.486 33.8752C278.134 33.2853 277.395 33.1069 276.834 33.4767C276.273 33.8465 276.103 34.6246 276.455 35.2145C276.807 35.8044 277.546 35.9828 278.107 35.613Z" fill="white"/>
@@ -212,7 +213,7 @@
             <form action="" method="POST">
             <div>   
             <input type="email" name="email" id="email" placeholder="Your Email">
-            <button class="get-started-btn">I want to know</button>
+            <button name="submit" class="get-started-btn">I want to know</button>
         </div> 
         </form>
         </div>
@@ -225,19 +226,19 @@
             <div class="row padding">
                 <div class="col-md-4">
                     <div class="card">
-                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <img src="img/et_caution.svg" alt="caution">
                     </div>
                     <p class="card-text">Tells you when your partner is <br> cheating</p>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <img src="img/vs_profile.svg" alt="profile">
                     </div>
                     <p class="card-text">Tells you who your partner is <br> cheating with</p>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <i class="fa fa-slideshare" aria-hidden="true"></i>
+                        <img src="img/prediction 1.svg" alt="prediction">
                     </div>
                     <p class="card-text">Predicts where and when to <br> catch them</p>
                 </div>
@@ -252,13 +253,13 @@
         <div class="form-data" data-aos="fade-up-left">
             <form action="" method="POST">
                 <input type="email" name="email" id="email" placeholder="Your Email">
-                <button>SUBMIT</button>
+                <button name ="start">SUBMIT</button>
             </form>
         </div>
     </div>
 
 <!-- section 4 -->
-    <div class="container" data-aos="zoom-in">
+    <div class="container">
     <div class="container-fluid padding section-four">
         <div class="row welcome text-left">
             <div class="col-12 text-left">
@@ -269,30 +270,146 @@
     <!-- cards -->
         <div class="row padding">
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-right">
+            
+                        <img src="img/Rectangle.svg"  alt="thumbnail" data-toggle="modal" data-target="#exampleModal">
+                    
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-right">
+                    <img src="img/Rectangle (1).svg"  alt="thumbnail" data-toggle="modal" data-target="#exampleModalOne">   
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-right">
+                    <img src="img/Rectangle (2).svg" alt="thumbnail"  data-toggle="modal" data-target="#exampleModalTwo">
+                </div>
             </div>
         </div>
         <!-- card 2 -->
         <div class="row padding">
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-left">
+                    <img src="img/Rectangle (3).svg"  alt="thumbnail" data-toggle="modal" data-target="#exampleModalThree">
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-left">
+                    <img src="img/Rectangle (4).svg"  alt="thumbnail" data-toggle="modal" data-target="#exampleModalFour">
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="card"></div>
+                <div class="card" data-aos="zoom-in-left">
+                    <img src="img/Rectangle (5).svg"  alt="thumbnail" data-toggle="modal" data-target="#exampleModalFive">
+                </div>
             </div>
             </div>
         </div>
     </div>
-    
+    <div class="pattern">
+        <img src="img/Group 33 (1).svg" alt="">
+    </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (6).svg" alt="" data-aos="zoom-in-down">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal one -->
+<div class="modal fade" id="exampleModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalOneLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalOneLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (7).svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal Two  -->
+<div class="modal fade" id="exampleModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalOneLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalOneLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (8).svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalOneLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalOneLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (9).svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalOneLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalOneLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (10).svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalFive" tabindex="-1" role="dialog" aria-labelledby="exampleModalOneLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-light" id="exampleModalOneLabel">IN-FIDEL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="img/Rectangle (11).svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- End -->
 
 <!-- bootstrap cdn -->
@@ -300,17 +417,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Animate script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
-
     <!-- Custom script -->
-    <script src="particles/particles.js"></script>
-    <script src="particles/index.js"></script>
-
-    <script>
-        AOS.init({
-            duration:1600,
-        })
-    </script>
+    <script src="js/particles.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

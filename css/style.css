@@ -2,20 +2,10 @@
 body,html{
     margin: 0;
     padding: 0;
+    background: #FBFBFB;
     font-family: 'Poppins', sans-serif;
     color: #2B2750;
 }
-
-/*Particles*/
-/* #particles-js{
-    position: absolute;
-    width: 98vw;
-}
-.particles-js-canvas-el{
-    width: 98vw!important;
-} */
-
-/*End of Particles*/
 .wrapper{
     width: 100%;
     height: 412px;
@@ -30,13 +20,13 @@ body,html{
     margin-left: 5px;
 }
  .box-two svg{
-     margin-top: -135px;
+     margin-top: -145px;
      margin-left: -5px;
      margin-right: -10px;
-     width: 375px;
+     width: 425px;
  }
  .content{
-    margin-top: -270px;
+    margin-top: -290px;
     margin-left: 30px;
  }
  .content img{
@@ -78,8 +68,11 @@ button{
     font-size: .9rem;
     font-weight: bold;
 }
+button:hover{
+    background-color: #F5D578;
+}
 .container-fluid{
-    margin-top: 250px;
+    margin-top: 50px;
     margin-bottom: 80px;
 }
 .card{
@@ -89,17 +82,17 @@ button{
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
     border-radius: 15px;
     margin: auto;
-
 }
-.card i{
-    font-size: 7rem;
-    margin-top: 50px;
-    text-align: center;
-    /* color: white; */
+.section-two{
+    margin-top: 280px;
+}
+.section-two img{
+    margin-top: 40px;
 }
 .col-md-4 p{
     margin-top: .9rem;
     text-align: center;
+    margin-bottom: 10px !important;
 }
 .section-three{
     background: #17133C;
@@ -134,11 +127,16 @@ button{
     width: 300px;
     height: 300px;
     margin-bottom: 30px;
+    background: #5D5A7B;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
     border-radius: 15px;
 }
+.section-four .card img{
+    margin-top: -15px;
+}
 .section-four p, .section-four h1{
     color: #2B2750;
+    text-align: center;
 }
 .section-four h1{
     font-size: 28px;
@@ -146,29 +144,42 @@ button{
 }
 .section-four p{
     font-size: .9rem;
+    text-align: center;
 }
-@media only screen and (min-width: 375px){
-.box-two svg{
-    width: 390px;
-    margin-top: -135px;
-    }
+.pattern img{
+    float: right;
+    width: 50%;
+    margin-top: -245px;
+    margin-bottom: 80px;
 }
-@media only screen and (min-width: 411px){
+.modal-content{
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content img{
+    width: 900px;
+}
+
+@media only screen and (min-width: 600px){
     .box-one{
         background: linear-gradient(0deg, #FFFFBA 20%, #0070AD 60%, #002863 100%);
     }
     .box-two svg{
-        width: 427px;
-        margin-top: -152px;
+        width: 635px;
+        margin-top: -220px;
     }
     .content{
-        margin-top: -280px;
+        margin-top: -440px;
     }
     .content .logo{
         width: 110px;
     }
     h3{
-        margin-top: 30px;
+        margin-top: 40px;
     }
    .content form{
         margin-top: 30px;
@@ -176,8 +187,9 @@ button{
    .content input, .content button{
         padding: 15px;
     }
+
     .section-two{
-        margin-top: 300px;
+        margin-top: 450px;
     }
     .card-text{
         font-size: .9rem;
@@ -186,10 +198,10 @@ button{
         height: 250px;
     }
     .title{
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .form-data{
-        margin-top: -50px;
+        margin-top: 90px;
     }
     .form-data input, .form-data button{
         padding: 15px;
@@ -197,13 +209,21 @@ button{
     .section-four{
         margin-top: -55px;
     }
+    .section-four .card img{
+        margin-top: -10px;
+    }
     .section-four p{
         font-size: .9rem;
+    }
+    .pattern img{
+        width: 40%;
+        margin-top: -275px;
+        margin-bottom: 80px;
     }
 }
 
 @media only screen and (min-width: 768px){
-    .box-two svg{
+     .box-two svg{
         margin-top: -270px;
         margin-left: -10px;
         width: 795px;
@@ -235,12 +255,10 @@ button{
          font-size: 1rem;
      }
 
+
      /* section two */
     .section-two{
-        margin-top: 620px;
-    }
-    .section-three{
-        margin-top: 50px;
+        margin-top: 630px;
     }
     .title{
         margin-top: 65px;
@@ -252,31 +270,61 @@ button{
         width: 250px;
     }
     .section-four{
+        margin-top: -50px;
     }
     .section-four .card{
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 210px;
+        margin-bottom: 20px;
+    }
+    .section-four h1, .section-four p{
+        text-align: left;
+    }
+    .section-four .card img{
+        margin-top: -60px;
+    }
+    .pattern img{
+        width: 18%;
+        margin-top: -205px;
+        margin-bottom: 80px;
     }
 }
+@media only screen and (min-width: 994px){
+    .box-two svg{
+        margin-top: -270px;
+        /* margin-left: -10px; */
+        width: 795px;
+    }
 
+    .section-four .card{
+        width: 280px;
+        height: 280px;
+    }
+    .section-four .card img{
+        margin-top: -20px;
+    }
+    .pattern img{
+        margin-top: -228px;
+    }
+}
 @media only screen and (min-width: 1024px){
     .wrapper{
-        height: 660px;
+        height: 560px;
         display: flex;
         flex-direction: row-reverse;
     }
     .box-one svg{
-        width: 768px;
-        height: 700px;
-        margin-top: -20px;
+        width: 580px;
+        height: 790px;
+        margin-top: -90px;
     }
     .box-two svg{
-        width: 700px;
+        width: 600px;
         transform: rotate(-270deg);
-        margin-top: 5px;
+        margin-top: -6px;
         position: absolute;
         z-index: 0;
-        left:180px
+        left:100px
     }
     .content{
        position: relative;
@@ -289,59 +337,160 @@ button{
         width: 110px;
     }
     .content h3{
+        font-size: 30px;
         margin-top: 80px;
     }
-    input, button{
-        margin-top: 20px;
-        padding: 20px;
+    .content h1{
+        font-size: 40px;
     }
-    input{
-        width: 550px;
+    .content input{
+        width: 200px;
+        padding: 15px;
     }
-    button{
-        width: 180px;
+    .content p{
+        font-size: 20px;
     }
-    .container-fluid{
-        margin-top: 80px;
+    .content button{
+        width: 160px;
+        padding: 15px;
+    }
+    .section-two{
+        margin-top: 100px;
+    }
+    .section-four{
         margin-bottom: 80px;
     }
     .card{
         width: 200px;
     }
-   .card i{
-        font-size: 7rem;
-        margin-top: 50px;
-    }
     .col-md-4 p{
         margin-top: 20px;
+        font-size: 20px;
     }
     .section-three{
         height: 300px;
     }
     .title h2{
         font-size: 28px;
-        margin-top: 60px;
-        /* padding-top: 10px; */
+        margin-top: 40px;
     }
     .form-data{
         margin-top: 90px;
     }
+    .form-data input {
+        width: 350px;
+    }
+    .form-data button{
+        width: 120px;
+    }
     .form-data input, .form-data button{
-        padding: 20px;
+        padding: 15px;
+        font-size: 16px;
     }
     .section-four .card{
         width: 300px;
         height: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+    }
+    .section-four .card img{
+        margin-top: -10px;
     }
     .section-four h1{
-        font-size: 28px;
+        font-size: 30px;
     }
     .section-four p{
-        font-size: 18;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 }
+@media only screen and (min-width: 1200px){
+    .wrapper{
+        height: 660px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .box-one svg{
+        width: 768px;
+        height: 700px;
+        margin-top: -20px;
+    }
+    .box-two svg{
+        width: 707px;
+        margin-top: -238px;
+        position: absolute;
+        z-index: 0;
+        left:37px
+    }
+    .content{
+       position: relative;
+        z-index: 5;
+        margin-top: 5px;
+        width:30vw;
+        left:0;
+    }
+    .logo{
+        width: 110px;
+    }
+    .content h3{
+        margin-top: 80px;
+    }
+    .content input, .content button{
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .content input{
+        width: 250px;
+    }
+    .section-three input{
+        padding: 15px;
+    }
+    .section-three button{
+        padding: 15px;
+    }
+    .section-four .card {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 18px;
+    }
+    .section-four .card img{
+        margin-top: 20px;
+    }
+    .pattern img{
+        width: 20%;
+        margin-top: -295px;
+        margin-bottom: 130px;
+    }
+}
+@media only screen and (min-width: 1366px){
+    .box-two svg{
+        width: 707px;
+        margin-top: 2px;
+        position: absolute;
+        z-index: 0;
+        left:190px
+    }
+}
+@media only screen and (min-width: 1440px){
+    .box-two svg{
+        width: 707px;
+        margin-top: -238px;
+        position: absolute;
+        z-index: 0;
+        left:265px
+    }
+}
+@media only screen and (max-width: 375px){
+    .box-two svg{
+        width: 390px;
+        margin-top: -135px;
+        z-index: 5;
+    }
+    .content{
+        margin-top: -260px;
+        margin-left: 30px;
+     }
 
+}
 @media only screen and (max-width: 320px){
     .box-two svg{
         margin-top: -115px;
@@ -364,5 +513,12 @@ button{
     .section-four .card{
         width: 250px;
         height: 250px;
+    }
+    .section-four .card img{
+        margin-top: -40px;
+    }
+    .pattern img{
+        margin-top: -220px;
+        margin-bottom: 100px;
     }
 }
